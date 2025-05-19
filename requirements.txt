@@ -1,0 +1,5 @@
+# -*- coding: UTF-8 -*-
+yfinance
+schedule
+requests
+python-dotenv
