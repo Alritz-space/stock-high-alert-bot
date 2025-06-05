@@ -1,12 +1,45 @@
 {
   "stocks": [
-    {
-      "symbol": "RELIANCE.NS",
-      "all_time_high": 2935
-    },
-    {
-      "symbol": "TCS.NS",
-      "all_time_high": 4170
-    }
+    { "symbol": "AFCONS.NS", "all_time_high": 570 },
+    { "symbol": "ANURAS.NS", "all_time_high": 1234 },
+    { "symbol": "BAJAJ-AUTO.NS", "all_time_high": 12774 },
+    { "symbol": "BANDHANBNK.NS", "all_time_high": 741.8 },
+    { "symbol": "GICRE.NS", "all_time_high": 525.5 },
+    { "symbol": "GLAND.NS", "all_time_high": 4350 },
+    { "symbol": "HCLTECH.NS", "all_time_high": 2012.2 },
+    { "symbol": "HEXT.NS", "all_time_high": 891 },
+    { "symbol": "HINDPETRO.NS", "all_time_high": 457.15 },
+    { "symbol": "ICICIGI.NS", "all_time_high": 2301.9 },
+    { "symbol": "IEX.NS", "all_time_high": 246.36 },
+    { "symbol": "INDOSTAR.NS", "all_time_high": 442.7 },
+    { "symbol": "INDIGO.NS", "all_time_high": 5665.5 },
+    { "symbol": "IRFC.NS", "all_time_high": 229 },
+    { "symbol": "JIOFIN.NS", "all_time_high": 394.7 },
+    { "symbol": "LICI.NS", "all_time_high": 1222 },
+    { "symbol": "MTARTECH.NS", "all_time_high": 2920.35 },
+    { "symbol": "NAVKARCORP.NS", "all_time_high": 247 },
+    { "symbol": "NEWGEN.NS", "all_time_high": 1798.9 },
+    { "symbol": "NTPCGREEN.NS", "all_time_high": 155.35 },
+    { "symbol": "PARADEEP.NS", "all_time_high": 176.66 },
+    { "symbol": "PNB.NS", "all_time_high": 279.98 },
+    { "symbol": "PNCINFRA.NS", "all_time_high": 574.8 },
+    { "symbol": "QPOWER.NS", "all_time_high": 494.45 },
+    { "symbol": "RECLTD.NS", "all_time_high": 654 },
+    { "symbol": "RELIANCE.NS", "all_time_high": 1608.8 },
+    { "symbol": "SAIL.NS", "all_time_high": 293 },
+    { "symbol": "SANDHAR.NS", "all_time_high": 697.5 },
+    { "symbol": "SBIN.NS", "all_time_high": 912 },
+    { "symbol": "SBICARD.NS", "all_time_high": 1165 },
+    { "symbol": "SBILIFE.NS", "all_time_high": 1936 },
+    { "symbol": "SCI.NS", "all_time_high": 384.2 },
+    { "symbol": "SHYAMMETL.NS", "all_time_high": 956.9 },
+    { "symbol": "SONACOMS.NS", "all_time_high": 839.9 },
+    { "symbol": "SURYODAY.NS", "all_time_high": 296.35 },
+    { "symbol": "SYNGENE.NS", "all_time_high": 960.6 },
+    { "symbol": "TRANSRAILL.NS", "all_time_high": 718.9 },
+    { "symbol": "UNIMECH.NS", "all_time_high": 1523.75 },
+    { "symbol": "VMM.NS", "all_time_high": 133 },
+    { "symbol": "YESBANK.NS", "all_time_high": 404 },
+    { "symbol": "ORCL", "all_time_high": 198.31 }
   ]
 }
