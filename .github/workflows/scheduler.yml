@@ -1,1 +1,29 @@
+name: Stock High Email Alert
+
+on:
+  schedule:
+    - cron: "30 9 * * 1-5"  # Run at 9:30 AM IST on weekdays
+  workflow_dispatch:
+
+jobs:
+  stock_alert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: pip install yfinance
+
+    - name: Run alert script
+      env:
+        SENDER_EMAIL: ${{ secrets.EMAIL_FROM }}
+        RECEIVER_EMAIL: ${{ secrets.EMAIL_TO }}
+        EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASS }}
+      run: python main.py
 
