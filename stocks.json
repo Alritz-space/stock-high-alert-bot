@@ -1,1 +1,12 @@
-
+{
+  "stocks": [
+    {
+      "symbol": "RELIANCE.NS",
+      "all_time_high": 2935
+    },
+    {
+      "symbol": "TCS.NS",
+      "all_time_high": 4170
+    }
+  ]
+}
