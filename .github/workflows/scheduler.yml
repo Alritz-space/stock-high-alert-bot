@@ -22,8 +22,8 @@ jobs:
 
     - name: Run alert script
       env:
-        SENDER_EMAIL: ${{ secrets.EMAIL_FROM }}
-        RECEIVER_EMAIL: ${{ secrets.EMAIL_TO }}
-        EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_PASS }}
+        EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+        EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
       run: python main.py
 
