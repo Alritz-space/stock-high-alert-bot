@@ -44,7 +44,11 @@ def main():
     sender_email = os.getenv("EMAIL_FROM")
     receiver_email = os.getenv("EMAIL_TO")
     app_password = os.getenv("EMAIL_PASS")
-
+    
+    # Validate environment variables
+    if not sender_email or not receiver_email or not app_password:
+        raise ValueError("Missing required environment variables: EMAIL_FROM, EMAIL_TO, or EMAIL_PASS")
+    
     send_email_alert(messages, sender_email, receiver_email, app_password)
     
     for msg in messages:
