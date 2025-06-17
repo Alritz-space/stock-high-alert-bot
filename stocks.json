@@ -11,8 +11,8 @@
     { "symbol": "HINDPETRO.NS", "all_time_high": 457.15 },
     { "symbol": "ICICIGI.NS", "all_time_high": 2301.9 },
     { "symbol": "IEX.NS", "all_time_high": 246.36 },
-    { "symbol": "INDOSTAR.NS", "all_time_high": 442.7 },
-    { "symbol": "INDIGO.NS", "all_time_high": 5709 },
+    { "symbol": "INDOSTAR.NS", "all_time_high": 607 },
+    { "symbol": "INDIGO.NS", "all_time_high": 5729 },
     { "symbol": "IRFC.NS", "all_time_high": 229 },
     { "symbol": "JIOFIN.NS", "all_time_high": 394.7 },
     { "symbol": "LICI.NS", "all_time_high": 1222 },
@@ -23,7 +23,7 @@
     { "symbol": "PARADEEP.NS", "all_time_high": 184 },
     { "symbol": "PNB.NS", "all_time_high": 279.98 },
     { "symbol": "PNCINFRA.NS", "all_time_high": 574.8 },
-    { "symbol": "QPOWER.NS", "all_time_high": 527 },
+    { "symbol": "QPOWER.NS", "all_time_high": 540 },
     { "symbol": "RECLTD.NS", "all_time_high": 654 },
     { "symbol": "RELIANCE.NS", "all_time_high": 1608.8 },
     { "symbol": "SAIL.NS", "all_time_high": 293 },
@@ -38,7 +38,7 @@
     { "symbol": "SYNGENE.NS", "all_time_high": 960.6 },
     { "symbol": "TRANSRAILL.NS", "all_time_high": 718.9 },
     { "symbol": "UNIMECH.NS", "all_time_high": 1523.75 },
-    { "symbol": "VMM.NS", "all_time_high": 133 },
+    { "symbol": "VMM.NS", "all_time_high": 135 },
     { "symbol": "YESBANK.NS", "all_time_high": 404 },
     { "symbol": "ORCL", "all_time_high": 216 }
   ]
