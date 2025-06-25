@@ -1,15 +1,16 @@
-name: Update ATH Daily
+name: Update All-Time Highs
 
 on:
   schedule:
-    - cron: "0 3 * * 1-5"  # 8:30 AM IST = 3:00 AM UTC
-  workflow_dispatch:
+    - cron: "0 3 * * 1-5"  # 8:30 AM IST (3:00 AM UTC), Mon–Fri
+  workflow_dispatch:       # Allow manual runs too
 
 jobs:
   update-ath:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Set up Python
@@ -22,17 +23,14 @@ jobs:
 
       - name: Run ATH updater
         run: python update_ath.py
-        
-      - permissions:
-        contents: write
-        
-      - name: Commit and push updated JSON
-  env:
-    GH_PAT: ${{ secrets.GH_PAT }}
-  run: |
-    git config user.name "github-actions"
-    git config user.email "github-actions@github.com"
-    git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
-    git add stocks.json
-    git commit -m "Auto-update ATH values [CI]" || echo "No changes to commit"
-    git push
+
+      - name: Commit and push updated stocks.json
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
+          git add stocks.json
+          git commit -m "Auto-update ATH values [CI]" || echo "No changes to commit"
+          git push
