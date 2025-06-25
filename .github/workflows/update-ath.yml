@@ -1,0 +1,32 @@
+name: Update ATH Daily
+
+on:
+  schedule:
+    - cron: "0 3 * * 1-5"  # 8:30 AM IST = 3:00 AM UTC
+  workflow_dispatch:
+
+jobs:
+  update-ath:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install yfinance
+
+      - name: Run ATH updater
+        run: python update_ath.py
+
+      - name: Commit and push updated JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add stocks.json
+          git commit -m "Auto-update ATH values [CI]" || echo "No changes"
+          git push
