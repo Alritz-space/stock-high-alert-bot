@@ -2,8 +2,8 @@ name: Update All-Time Highs
 
 on:
   schedule:
-    - cron: "0 3 * * 1-5"  # 8:30 AM IST (3:00 AM UTC), Mon–Fri
-  workflow_dispatch:       # Allow manual runs too
+    - cron: "0 3 * * 1-5"      # 08:30 AM IST (3:00 AM UTC), Mon–Fri
+  workflow_dispatch:            # manual trigger support
 
 jobs:
   update-ath:
@@ -12,6 +12,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.1
+        with:
+          ssh-private-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -24,13 +31,11 @@ jobs:
       - name: Run ATH updater
         run: python update_ath.py
 
-      - name: Commit and push updated stocks.json
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+      - name: Commit and push changes
         run: |
-          git config user.name "github-actions"
+          git config user.name  "github-actions"
           git config user.email "github-actions@github.com"
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}
+          git remote set-url origin git@github.com:${{ github.repository }}.git
           git add stocks.json
           git commit -m "Auto-update ATH values [CI]" || echo "No changes to commit"
-          git push
+          git push origin HEAD:main
