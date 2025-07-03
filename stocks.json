@@ -163,6 +163,10 @@
     {
       "symbol": "ORCL",
       "all_time_high": 229.98
+    },
+    {
+      "symbol": "HDBFS",
+      "all_time_high": 890
     }
   ]
 }
