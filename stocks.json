@@ -2,7 +2,7 @@
   "stocks": [
     {
       "symbol": "AFCONS.NS",
-      "all_time_high": 545.55
+      "all_time_high": 542.27
     },
     {
       "symbol": "ANURAS.NS",
@@ -26,7 +26,7 @@
     },
     {
       "symbol": "HCLTECH.NS",
-      "all_time_high": 1972.35
+      "all_time_high": 1957.02
     },
     {
       "symbol": "HEXT.NS",
@@ -74,7 +74,7 @@
     },
     {
       "symbol": "NEWGEN.NS",
-      "all_time_high": 1755.9
+      "all_time_high": 1747.34
     },
     {
       "symbol": "NTPCGREEN.NS",
@@ -94,7 +94,7 @@
     },
     {
       "symbol": "QPOWER.NS",
-      "all_time_high": 825.0
+      "all_time_high": 904.0
     },
     {
       "symbol": "RECLTD.NS",
@@ -146,7 +146,7 @@
     },
     {
       "symbol": "TRANSRAILL.NS",
-      "all_time_high": 779.6
+      "all_time_high": 784.5
     },
     {
       "symbol": "UNIMECH.NS",
@@ -154,7 +154,7 @@
     },
     {
       "symbol": "VMM.NS",
-      "all_time_high": 137.75
+      "all_time_high": 137.85
     },
     {
       "symbol": "YESBANK.NS",
@@ -162,11 +162,11 @@
     },
     {
       "symbol": "ORCL",
-      "all_time_high": 241.3
+      "all_time_high": 248.75
     },
     {
       "symbol": "TRAVELFOOD.NS",
-      "all_time_high": 1095.9
+      "all_time_high": 1101.8
     },
     {
       "symbol": "HDBFS.NS",
